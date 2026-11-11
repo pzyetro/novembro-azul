@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novembro Azul | Um Toque pela Vida</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. Cabeçalho da Campanha -->
+  <header>
+    <div class="logo">
+      <h1>🎗️ Novembro Azul: Um Toque pela Vida</h1>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#metricas">Estatísticas</a></li>
+        <li><a href="#tabela-exames">Exames</a></li>
+        <li><a href="#agendamento">Agendamento</a></li>
+      </ul>
+    </nav>
+    <div class="badge-destaque">
+      💙 Mês Mundial de Combate ao Câncer de Próstata
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- 2. Painel de Métricas -->
+    <section id="metricas" class="section-container">
+      <h2>📊 Estatísticas e Impacto</h2>
+      <div class="metrics-grid">
+        <div class="card-metric">
+          <h3>12.450</h3>
+          <p>Exames Realizados este mês</p>
+        </div>
+        <div class="card-metric">
+          <h3>98.2%</h3>
+          <p>Chance de cura com diagnóstico precoce</p>
+        </div>
+        <div class="card-metric">
+          <h3>18</h3>
+          <p>Clínicas e Postos Parceiros Ativos</p>
+        </div>
+        <div class="card-metric">
+          <h3>45+</h3>
+          <p>Idade recomendada para início do rastreamento</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Tabela Extensa de Agendamentos e Exames -->
+    <section id="tabela-exames" class="section-container">
+      <h2>📋 Controle de Agendamentos e Exames</h2>
+      <div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th>Horário</th>
+              <th>Paciente</th>
+              <th>Idade</th>
+              <th>Tipo de Exame</th>
+              <th>Médico Urologista</th>
+              <th>Status do Exame</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>08:00</td>
+              <td>Carlos Eduardo Silva</td>
+              <td>52</td>
+              <td>Consulta Preventiva</td>
+              <td rowspan="3" class="rowspan-cell">Dr. Roberto Almeida</td>
+              <td><span class="status-badge status-concluido">Concluído</span></td>
+            </tr>
+            <tr>
+              <td>08:45</td>
+              <td>João Carlos Oliveira</td>
+              <td>61</td>
+              <td>Exame de PSA</td>
+              <td><span class="status-badge status-concluido">Concluído</span></td>
+            </tr>
+            <tr>
+              <td>09:30</td>
+              <td>Marcos Antonio Souza</td>
+              <td>48</td>
+              <td>Ultrassonografia de Próstata</td>
+              <td><span class="status-badge status-andamento">Em Andamento</span></td>
+            </tr>
+            <tr>
+              <td>10:15</td>
+              <td>Fernando Henrique Dias</td>
+              <td>55</td>
+              <td>Consulta Preventiva</td>
+              <td rowspan="2" class="rowspan-cell">Dra. Camila Vasconcelos</td>
+              <td><span class="status-badge status-agendado">Agendado</span></td>
+            </tr>
+            <tr>
+              <td>11:00</td>
+              <td>Roberto Martins Costa</td>
+              <td>64</td>
+              <td>Biópsia</td>
+              <td><span class="status-badge status-agendado">Agendado</span></td>
+            </tr>
+            <tr>
+              <td>13:30</td>
+              <td>Paulo Roberto Lima</td>
+              <td>50</td>
+              <td>Exame de PSA</td>
+              <td rowspan="3" class="rowspan-cell">Dr. Marcelo Ribeiro</td>
+              <td><span class="status-badge status-concluido">Concluído</span></td>
+            </tr>
+            <tr>
+              <td>14:15</td>
+              <td>Luiz Fernando Santos</td>
+              <td>58</td>
+              <td>Ultrassonografia de Próstata</td>
+              <td><span class="status-badge status-andamento">Em Andamento</span></td>
+            </tr>
+            <tr>
+              <td>15:00</td>
+              <td>Gerson Augusto Pereira</td>
+              <td>67</td>
+              <td>Consulta Preventiva</td>
+              <td><span class="status-badge status-agendado">Agendado</span></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4" class="tfoot-summary">Total de Pacientes Agendados no Dia</td>
+              <td colspan="2"><strong>8 Atendimentos</strong></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+
+    <!-- 4. Seção de Recomendações e Prevenção -->
+    <section class="section-container">
+      <h2>💡 Dicas de Prevenção e Cuidados</h2>
+      <div class="cards-flex">
+        <div class="card-info">
+          <h3>🥗 Hábitos Saudáveis</h3>
+          <p>Mantenha uma alimentação equilibrada e pratique atividades físicas regularmente. O controle do peso corporal reduz riscos associados a diversas doenças.</p>
+        </div>
+        <div class="card-info">
+          <h3>🩺 Exames Anuais</h3>
+          <p>A realização regular dos exames de PSA e toque retal é fundamental. O diagnóstico precoce aumenta drasticamente as chances de cura.</p>
+        </div>
+        <div class="card-info">
+          <h3>🧬 Histórico Familiar</h3>
+          <p>Homens com histórico de câncer de próstata na família (pai ou irmão) devem iniciar a prevenção a partir dos 45 anos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Formulário de Agendamento Rápido -->
+    <section id="agendamento" class="section-container">
+      <div class="form-card">
+        <h2>📝 Agendamento Rápido</h2>
+        <form action="#" method="post" class="grid-form">
+          <div class="form-group full-width">
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+          </div>
+
+          <div class="form-group">
+            <label for="idade">Idade</label>
+            <input type="number" id="idade" name="idade" placeholder="Ex: 50" min="18" max="120" required>
+          </div>
+
+          <div class="form-group">
+            <label for="telefone">Telefone / WhatsApp</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="exame">Exame Desejado</label>
+            <select id="exame" name="exame" required>
+              <option value="" disabled selected>Selecione uma opção...</option>
+              <option value="consulta">Consulta Preventiva</option>
+              <option value="psa">Exame de PSA</option>
+              <option value="ultrassom">Ultrassonografia de Próstata</option>
+              <option value="biopsia">Biópsia</option>
+            </select>
+          </div>
+
+          <div class="form-group full-width">
+            <button type="submit" class="btn-agendar">Agendar Consulta Gratuita 🎗️</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 6. Rodapé -->
+  <footer>
+    <p>🎗️ Campanha Novembro Azul | Cuide de quem você ama, previna-se!</p>
+  </footer>
+
+</body>
+</html>

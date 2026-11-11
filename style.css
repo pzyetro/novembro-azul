@@ -1,0 +1,303 @@
+:root {
+  --azul-profundo: #07152b;
+  --azul-noite: #0c2347;
+  --azul-card: #132f5d;
+  --azul-royal: #1d4ed8;
+  --azul-celeste: #38bdf8;
+  --azul-claro: #dbeafe;
+  --branco: #ffffff;
+  --cinza-texto: #cbd5e1;
+  --sucesso: #10b981;
+  --alerta: #f59e0b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--azul-profundo);
+  color: var(--branco);
+  line-height: 1.6;
+}
+
+/* 1. Header */
+header {
+  background-color: var(--azul-noite);
+  padding: 20px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 2px solid var(--azul-card);
+}
+
+header h1 {
+  font-size: 1.4rem;
+  color: var(--azul-celeste);
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--branco);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--azul-celeste);
+}
+
+.badge-destaque {
+  background-color: var(--azul-card);
+  color: var(--azul-claro);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* Container Principal */
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.section-container {
+  margin-bottom: 50px;
+}
+
+.section-container h2 {
+  font-size: 1.6rem;
+  color: var(--azul-celeste);
+  margin-bottom: 20px;
+}
+
+/* 2. Métricas (Grid) */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card-metric {
+  background-color: var(--azul-card);
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.card-metric:hover {
+  transform: translateY(-4px);
+}
+
+.card-metric h3 {
+  font-size: 2.2rem;
+  color: var(--azul-celeste);
+  margin-bottom: 8px;
+}
+
+.card-metric p {
+  color: var(--cinza-texto);
+  font-size: 0.95rem;
+}
+
+/* 3. Tabela Extensa */
+.table-responsive {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--azul-noite);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: var(--azul-card);
+}
+
+th, td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+th {
+  color: var(--azul-celeste);
+  font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+tbody tr:hover {
+  background-color: rgba(56, 189, 248, 0.1);
+}
+
+.rowspan-cell {
+  vertical-align: middle;
+  background-color: var(--azul-noite);
+  font-weight: 500;
+}
+
+.tfoot-summary {
+  font-weight: bold;
+  text-align: right;
+  color: var(--azul-claro);
+}
+
+tfoot tr {
+  background-color: var(--azul-card);
+}
+
+/* Badges de Status */
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.status-concluido {
+  background-color: rgba(16, 185, 129, 0.2);
+  color: var(--sucesso);
+  border: 1px solid var(--sucesso);
+}
+
+.status-andamento {
+  background-color: rgba(245, 158, 11, 0.2);
+  color: var(--alerta);
+  border: 1px solid var(--alerta);
+}
+
+.status-agendado {
+  background-color: rgba(56, 189, 248, 0.2);
+  color: var(--azul-celeste);
+  border: 1px solid var(--azul-celeste);
+}
+
+/* 4. Dicas de Prevenção (Flexbox) */
+.cards-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card-info {
+  flex: 1 1 300px;
+  background-color: var(--azul-card);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-info h3 {
+  color: var(--azul-celeste);
+  margin-bottom: 12px;
+}
+
+.card-info p {
+  color: var(--cinza-texto);
+  font-size: 0.95rem;
+}
+
+/* 5. Formulário */
+.form-card {
+  background-color: var(--azul-noite);
+  padding: 35px;
+  border-radius: 10px;
+  border: 1px solid var(--azul-card);
+}
+
+.grid-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  color: var(--azul-claro);
+}
+
+.form-group input, 
+.form-group select {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid var(--azul-card);
+  background-color: var(--azul-profundo);
+  color: var(--branco);
+  font-size: 1rem;
+}
+
+.form-group input:focus, 
+.form-group select:focus {
+  outline: none;
+  border-color: var(--azul-celeste);
+}
+
+.btn-agendar {
+  background: linear-gradient(135deg, var(--azul-royal), var(--azul-celeste));
+  color: var(--branco);
+  border: none;
+  padding: 14px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.btn-agendar:hover {
+  opacity: 0.9;
+}
+
+/* 6. Rodapé */
+footer {
+  background-color: var(--azul-noite);
+  text-align: center;
+  padding: 20px;
+  color: var(--cinza-texto);
+  border-top: 1px solid var(--azul-card);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .grid-form {
+    grid-template-columns: 1fr;
+  }
+}
